@@ -1,6 +1,7 @@
 public sealed  class Nauczyciel
         extends Osoba
-        permits Wychowawca{
+    implements Dyzurny
+        permits Wychowawca {
     //sealed ograniczenie dzieciczenia
     //permits jaka klasa moze dziedziczyc
     private String przedmiot;
@@ -18,5 +19,10 @@ public sealed  class Nauczyciel
                 "wiek: " + getWiek()+
                 "przedmiot='" + przedmiot +
                 '}';
+    }
+
+    @Override
+    public void wykonajDyzur() {
+        System.out.println("Spacer po korytarzu");
     }
 }
