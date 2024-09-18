@@ -15,6 +15,20 @@ public class Osoba {
         this.nazwisko = nazwisko;
         this.wiek = wiek;
     }
+    //przeciazanie konstruktora (to 3 lub wiecej roznych ale tych samych konstruktorow ktore roznia sie tylko wpisanymi parametrami)
+
+    public Osoba(String imie, String nazwisko) {
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        wiek =7; //jezeli nie ma lokalnie zmiennej wiek to jest to pole klasy
+    }
+
+    public Osoba() {
+        imie = "";
+        nazwisko = "";
+        wiek = 0;
+    }
+
     //metody dostepowe
     //gettery i settery
     public String getImie() {
