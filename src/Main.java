@@ -14,5 +14,14 @@ public class Main {
         Osoba osobaX = new Osoba();
 
         System.out.println(osobaJas);
+
+        System.out.println("Liczba uczniow"+Uczen.liczbaObiektow);
+        Uczen uczen = new Uczen("Daniel","Nowy");
+        System.out.println("Liczba uczniow"+Uczen.liczbaObiektow);
+        Uczen uczen2 = new Uczen("Daniel","Nowa");
+        System.out.println("Liczba uczniow"+Uczen.liczbaObiektow);
+        Uczen uczen3 = new Uczen("Danielo","Stary");
+        System.out.println("Liczba uczniow"+Uczen.liczbaObiektow);
+        System.out.println(uczen3);
     }
 }

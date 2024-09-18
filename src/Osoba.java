@@ -64,4 +64,14 @@ public class Osoba {
     public void setWiek(int wiek) {
         this.wiek = wiek;
     }
+//zmiena adres komorki pamieci na dane
+    @Override
+    public String toString() {
+        return "Osoba{" +
+                "imie='" + imie + '\'' +
+                ", nazwisko='" + nazwisko + '\'' +
+                ", wiek=" + wiek +
+                '}';
+    }
+
 }
